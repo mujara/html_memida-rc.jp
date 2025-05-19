@@ -1,0 +1,2134 @@
+@use "../_setting" as s;
+
+.home #wrapper{
+	.mainVisual {
+		display:block;
+		margin-bottom:1em;
+		@include s.media(m){
+			margin-bottom:0;
+		}
+		.inBase{
+			position:relative;
+			@include s.media(m){
+				width:100%;
+			}
+			@include s.media(xxl){
+				width:1200px;
+			}
+			&::after{
+				content:" ";
+				width:110vw;
+				height:17.5em;
+				background:s.$colorType03;
+				display:block;
+				position:absolute;
+				left:-10%;
+				bottom:-6em;
+				z-index:-1;
+				@include s.media(m){
+					content:" ";
+					width:110vw;
+					height:15em;
+					background:s.$colorType03;
+					display:block;
+					position:absolute;
+					right:-90vw;
+					left:auto;
+					bottom:0;
+					z-index:-1;
+				}
+				@include s.media(xl){
+					height:15em;
+					position:absolute;
+					right:-100vw;
+					bottom:0;
+				}
+				@include s.media(xxl){
+					height:20em;
+					position:absolute;
+					right:-100vw;
+					bottom:0;
+				}
+			}
+		}
+		&__copy{
+			width:18em;
+			display:block;
+			position:absolute;
+			top:-1em;
+			left:0;
+			z-index:2;
+			@include s.media(m){
+				width:30%;
+				position:absolute;
+				top:30%;
+				left:8.4%;
+				//width:s.em(500);
+				//position:absolute;
+				//top:30%;
+				//left:-2em;
+			}
+			@include s.media(xl){
+				//width:s.em(550);
+				//position:absolute;
+				//top:30%;
+				//left:-6%;
+			}
+			@include s.media(xxl){
+				width:s.em(520);
+				position:absolute;
+				top:30%;
+				left:-11.5em;
+			}
+			img{
+				width:100%;
+			}
+		}
+		&__word{
+			span{
+				font-size:1.2em;
+				font-family: 'Zen Maru Gothic', serif;
+				font-weight:700;
+				background:#FFF;
+				display:inline-block;
+				padding:0.2em 0.7em;
+				border-radius:0.7em;
+				z-index:3;
+				@include s.media(m){
+					font-size:1.5em;
+				}
+				&:nth-child(1){
+					position:absolute;
+					top:20%;
+					left:15%;
+					@include s.media(m){
+						position:absolute;
+						top:28%;
+						left:45%;
+					}
+					@include s.media(xl){
+						position:absolute;
+						top:28%;
+						left:45%;
+					}
+					@include s.media(xxl){
+						position:absolute;
+						top:28%;
+						left:40%;
+					}
+				}
+				&:nth-child(2){
+					position:absolute;
+					top:28%;
+					left:35%;
+					@include s.media(m){
+						position:absolute;
+						top:35%;
+						left:57%;
+					}
+					@include s.media(xl){
+						position:absolute;
+						top:35%;
+						left:53%;
+					}
+					@include s.media(xxl){
+						position:absolute;
+						top:35%;
+						left:52%;
+					}
+				}
+				&:nth-child(3){
+					position:absolute;
+					top:40%;
+					left:15%;
+					@include s.media(m){
+						position:absolute;
+						top:46%;
+						left:66%;
+					}
+					@include s.media(xl){
+						position:absolute;
+						top:46%;
+						left:61%;
+					}
+					@include s.media(xxl){
+						position:absolute;
+						top:46%;
+						left:61%;
+					}
+				}
+			}
+		}
+		&__inner{
+			display:block;
+			width:100%;
+			position:relative;
+			margin-left:6%;
+			border-radius: 5em 0 0 0;
+			overflow:hidden;
+			@include s.media(m){
+				width:73%;
+				margin-left:18%;
+				border-radius: 5em 0 0 0;
+				overflow:hidden;
+			}
+			@include s.media(xl){
+				//width:97%;
+			}
+			@include s.media(xxl){
+				width:120%;
+				margin-left:0;
+			}
+			&.--typeButton{
+					border-radius:none;
+					overflow:visible;
+			}
+		}
+		&__button{
+			width:70%;
+			display:block;
+			position:absolute;
+			bottom:4.5em;
+			left:0;
+			@include s.media(m){
+				width:s.em(250);
+				display:block;
+				position:absolute;
+				bottom:3.5em;
+				left:0;
+			}
+			@include s.media(xl){
+				width:s.em(270);
+				display:block;
+				position:absolute;
+				bottom:5em;
+				left:0;
+				margin:0;
+				border-bottom:none;
+			}
+			@include s.media(xxl){
+				width:s.em(310);
+				display:block;
+				position:absolute;
+				bottom:5em;
+				left:0;
+				margin:0;
+				border-bottom:none;
+			}
+			a{
+				display:block;
+				background:#FFF;
+				padding:1em;
+				position:relative;
+				border-radius: 0 0 1.5em 0;
+				@include s.media(m){
+					border-radius: 0 0 1.5em 0;
+				}
+				&::before{
+					content:" ";
+					width:s.em(60);
+					height:3em;
+					color:#FFF;
+					background:s.$colorType02 url(../img/common/imgArrow02.svg) no-repeat center 0.9em;
+					background-size:1em auto;
+					position:absolute;
+					top:0;
+					right:0;
+					padding:1em;
+					border-radius: 0 0 0 1.5em;
+				}
+				&:hover{
+					background:s.$colorType02;
+					dl{
+						dt,dd{
+							color:#000;
+						}
+					}
+					&::before{
+						background:#000 url(../img/common/imgArrow02.svg) no-repeat center 0.9em;
+						background-size:1em auto;
+					}
+				}
+			}
+			dl{
+				dt{
+					color:s.$colorType02;
+					font-family: 'Zen Maru Gothic', serif;
+					font-weight:700;
+					font-size:1.2em;
+					margin-bottom:0.3em;
+					@include s.media(m){
+						font-size:1.75em;
+					}
+				}
+				dd{
+					font-family: 'Zen Kaku Gothic New', sans-serif;
+					font-weight:700;
+					font-size:0.9em;
+				}
+			}
+		}
+		&__bottomButtonBox{
+			width:90%;
+			display:flex;
+			justify-content:flex-end;
+			align-items:center;
+			margin-top:-3em;
+			margin-left:10%;
+			overflow:hidden;
+			padding-right:5%;
+			@include s.media(m){
+				width:60%;
+				position:absolute;
+				right:0;
+				bottom:-8em;
+				margin-top:0;
+				margin-left:0;
+				padding-right:0;
+			}
+			@include s.media(xl){
+				width:60%;
+				position:absolute;
+				right:10%;
+				bottom:-8em;
+			}
+			@include s.media(xxl){
+				width:60%;
+				position:absolute;
+				right:0;
+				bottom:-8em;
+			}
+			&.--pageButton{
+				width:90%;
+				display:flex;
+				justify-content:flex-end;
+				align-items:center;
+				margin-top:-3em;
+				margin-left:10%;
+				overflow:hidden;
+				padding-right:5%;
+				z-index:-1;
+				@include s.media(m){
+					width:60%;
+					position:absolute;
+					right:0;
+					bottom:-8em;
+					margin-top:0;
+					margin-left:0;
+					padding-right:0;
+					z-index:10;
+				}
+				@include s.media(xl){
+					width:60%;
+					position:absolute;
+					right:10%;
+					bottom:-8em;
+					z-index:10;
+				}
+				@include s.media(xxl){
+					width:60%;
+					position:absolute;
+					right:0;
+					bottom:-8em;
+					z-index:10;
+				}
+				#mainSlidebuttonBack,#mainSlidebuttonNext{
+					@include s.media(m){
+						display:block;
+					}
+				}
+				.mainSlidebuttonBack,.mainSlidebuttonNext{
+					@include s.media(m){
+						display:block;
+					}
+				}
+				.swiper-button-next,.swiper-button-prev{
+					@include s.media(m){
+						display:block;
+					}
+				}
+			}
+		}
+		&__bottomButton{
+			width:s.em(280);
+			img{
+				width:100%;
+			}
+			a,span{
+				cursor: pointer;
+				display:block;
+				text-align:center;
+				position:relative;
+				&::before{
+					content:" ";
+					width:3em;
+					height:3em;
+					color:#FFF;
+					background:s.$colorType02 url(../img/common/imgArrow02.svg) no-repeat center 1em;
+					background-size:1em auto;
+					border-radius: 50%;
+					position:absolute;
+					bottom:0.5em;
+					right:-1em;
+				    -webkit-transition: all .2s ease;
+				    transition: all .2s ease;
+					@include s.media(m){
+						width:4em;
+						height:4em;
+						background:s.$colorType02 url(../img/common/imgArrow02.svg) no-repeat center 1.5em;
+						background-size:1em auto;
+						position:absolute;
+						bottom:1em;
+						right:0;
+					}
+				}
+				&:hover{
+					color:s.$colorType02;
+					&::before{
+						background:#000 url(../img/common/imgArrow02.svg) no-repeat center 1em;
+						background-size:1em auto;
+						@include s.media(m){
+							background:#000 url(../img/common/imgArrow02.svg) no-repeat center 1.5em;
+							background-size:1em auto;
+						}
+					}
+				}
+				dl{
+					width:100%;
+					display:block;
+					position:absolute;
+					top:-1em;
+					left:0;
+					@include s.media(m){
+						top:0;
+						left:0;
+					}
+					dt{
+						display:block;
+						color:s.$colorType02;
+						font-family: 'Zen Maru Gothic', serif;
+						font-weight:700;
+						font-size:1.2em;
+						padding-top:1.5em;
+						@include s.media(m){
+							font-size:1.5em;
+							padding-top:0.3em;
+						}
+					}
+					dd{
+						display:none;
+						@include s.media(m){
+							display:block;
+							font-size:0.8em;
+						}
+					}
+				}
+				figure{
+					border-radius:50%;
+					overflow:hidden;
+					img{
+						width:100%;
+					}
+				}
+			}
+			a{
+				@include s.media(m){
+					pointer-events:none;
+				}
+			}
+			+.mainVisual__bottomButton{
+				margin-left:2em;
+				@include s.media(m){
+					margin-right:5em;
+				}
+				@include s.media(xl){
+					margin-right:0;
+				}
+			}
+		}
+	}
+}
+
+.home #wrapper .mainVisual{
+	&__copy{
+		@include s.media(m){
+			opacity: 0;
+			transition: 0.5s;
+			transition-duration:1s;
+			transform: translateX(70px);
+			transition-delay: 2s;
+		}
+	}
+	&__word span{
+		@include s.media(m){
+			opacity: 0;
+			transition: 0.5s;
+			transition-duration:1s;
+			transform: translateX(70px);
+		}
+		&:nth-child(1){ transition-delay: 2.1s; }
+		&:nth-child(2){ transition-delay: 2.2s; }
+		&:nth-child(3){ transition-delay: 2.3s; }
+	}
+	&__button{
+		@include s.media(m){
+			opacity: 0;
+			transition: 0.5s;
+			transition-duration:1s;
+			transition-delay: 2s;
+		}
+	}
+	&__inner{
+		@include s.media(m){
+		  --delay: 0;
+		  --duration: 800ms;
+		  --iterations: 1;
+			//opacity: 0;
+		}
+		&::before{
+			@include s.media(m){
+				display:block;
+				content:"";
+				width:100%;
+				height:100%;
+				display:block;
+				position:absolute;
+				top:0;
+				left:0;
+				background:#FFF;
+				z-index:2;
+			    -webkit-transition: all 1s ease;
+			    transition: all 1s ease;
+				transition-duration:1s;
+				transition-delay: 1s;
+			}
+		}
+		&::after{
+			@include s.media(m){
+				display:block;
+				content:"";
+				width:100%;
+				height:100%;
+				display:block;
+				position:absolute;
+				top:0;
+				left:0;
+				background:s.$colorType02;
+				z-index:3;
+			    -webkit-transition: all 1s ease;
+			    transition: all 1s ease;
+				transition-duration:1s;
+				opacity:0;
+			}
+		}
+	}
+	&__bottomButtonBox{
+		@include s.media(m){
+			opacity: 0;
+			transition: 0.5s;
+			transition-duration:3s;
+			transform: translateX(40px);
+			transition-delay: 2s;
+		}
+	}
+	&.active{
+		.mainVisual__copy{
+			@include s.media(m){
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+		.mainVisual__word span{
+			@include s.media(m){
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+		.mainVisual__button{
+			@include s.media(m){
+				opacity: 1;
+			}
+		}
+		.mainVisual__inner{
+			@include s.media(m){
+			}
+			&::before{
+				@include s.media(m){
+					position:absolute;
+					top:0;
+					left:-100vw;
+				}
+			}
+			&::after{
+				@include s.media(m){
+					animation-name: main-start-anim;/*アニメーションの定義名*/
+					animation-duration:2s;/*アニメーション変化時間 ※デフォルト*/
+					animation-fill-mode:forwards;/*アニメーションの開始と終了時の状態を指定*/
+					opacity:1;
+				}
+			}
+		}
+		.mainVisual__bottomButtonBox{
+			@include s.media(m){
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+	}
+}
+
+  @keyframes main-start-anim {
+	0% {
+			transform: translateX(100vw);
+	}
+	30% {
+			transform: translateX(0);
+	}
+	70% {
+			transform: translateX(0);
+	}
+	100% {
+			transform: translateX(-100vw);
+	}
+	}
+ 
+  .sliderBox--typeMainVisual .swiper,.swiper-wrapper {
+    display:block;
+    margin-top:-0.25em;
+  }
+  .sliderBox--typeMainVisual .swiper .slide-media {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .sliderBox--typeMainVisual .swiper .slide-media img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+     &.isPC{
+     	display:none;
+			@include s.media(m){
+				display:inline;
+			}
+     }
+     &.isSP{
+	display:inline;
+			@include s.media(m){
+     		display:none;
+			}
+     }
+  }
+  .sliderBox--typeMainVisual .swiper .swiper-slide .slide-media {
+     span{
+	width:100%;
+	display:block;
+    	height: 35em;
+			@include s.media(m){
+				height: 44em;
+			}
+	&:nth-child(1){
+     		display:none;
+		@include s.media(m){
+			display:block;
+		}
+	}
+	&:nth-child(2){
+		display:block;
+		@include s.media(m){
+     			display:none;
+		}
+	}
+     	}
+  }
+  .sliderBox--typeMainVisual .swiper .slide-media {
+    height: 35em;
+		@include s.media(m){
+			height: 44em;
+		}
+  }
+  .sliderBox--typeMainVisual .swiper .slide-media span {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .sliderBox--typeMainVisual .swiper .slide-media img {
+	-webkit-transition: 7s 1s ease-out;
+	transition: 7s 1s ease-out;
+  }
+  .sliderBox--typeMainVisual .swiper .swiper-slide {
+    overflow: hidden;
+  }
+  .sliderBox--typeMainVisual .swiper .swiper-slide[class*=-active] .slide-media span {
+    -webkit-transform: scale(1);
+  	transform:scale(1);
+  }
+  .sliderBox--typeMainVisual .swiper .swiper-slide[class*=-active] .slide-media img {
+    -webkit-transform: scale(1.1);
+  	transform:scale(1.1);
+  }
+  .sliderBox--typeMainVisual .swiper .swiper-slide[class*=-prev] .slide-media span {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  .sliderBox--typeMainVisual .swiper .swiper-slide[class*=-next] .slide-media span {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+@keyframes zoom-in-anim {
+	0% {
+	transform: translateX(0) scale(1);
+	}
+	100% {
+	transform: translateX(0) scale(1.2);
+	}
+}
+
+@keyframes zoom-in-anim-prev {
+	0% {
+	transform: translateX(0) scale(1.2);
+	}
+	100% {
+	transform: translateX(100%) scale(1.25);
+	}
+}
+
+@keyframes zoom-in-anim-next {
+	0% {
+	transform: translateX(0) scale(1.2);
+	}
+	100% {
+	transform: translateX(-100%) scale(1.25);
+	}
+}
+
+
+.homeNewsSection{
+	background:s.$colorType03;
+	display:block;
+	padding-top:3em;
+	@include s.media(m){
+		padding-top:6em;
+	}
+	.inBase__inner{
+		position:relative;
+	}
+}
+
+#wrapper .homeNewsBox{
+	.title--type01.--typeNews{
+		margin-left:12em;
+	}
+	&__inner{
+		display:block;
+		position:relative;
+		ul{
+			display:block;
+			background:#FFF;
+			border-radius:2em;
+			padding:2em 1em 3em;
+			@include s.media(m){
+				padding:2em 3em 4em;
+			}
+			li{
+				a{
+					font-size:1.1em;
+					display:block;
+					padding:1em;
+					border-bottom:#777777 solid 1px;
+					position:relative;
+					padding-right:3em;
+					line-height:1.7;
+					@include s.media(m){
+						padding-right:5em;
+					}
+					&:before{
+						content:" ";
+						width:2em;
+						height:2em;
+						color:#FFF;
+						background:url(../img/common/imgArrow03.svg) no-repeat center 0.7em;
+						border-left:#777 solid 1px;
+						background-size:0.7em auto;
+						position:absolute;
+						top:50%;
+						right:0;
+						margin-top:-1em;
+					    -webkit-transition: all .2s ease;
+					    transition: all .2s ease;
+						@include s.media(m){
+							width:4em;
+							position:absolute;
+							top:50%;
+							right:-1em;
+						}
+					}
+					&:hover{
+						color:s.$colorType02;
+					}
+					span{
+						display:inline-block;
+						&:nth-child(1){
+							font-family: 'Zen Kaku Gothic New', sans-serif;
+							font-weight:700;
+							margin-right:1em;
+							display:block;
+							@include s.media(m){
+								display:inline-block;
+							}
+						}
+						&:nth-child(2){
+							font-family: 'Zen Maru Gothic', serif;
+							font-weight:700;
+						}
+					}
+				}
+			}
+		}
+	}
+	&__image01{
+		width:12em;
+		position:absolute;
+		top:-3em;
+		left:-1em;
+		z-index:3;
+		@include s.media(m){
+			width:s.em(390);
+			position:absolute;
+			top:-9em;
+			left:-8em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__image02{
+		width:6em;
+		position:absolute;
+		bottom:-2em;
+		right:-1em;
+		z-index:1;
+		@include s.media(m){
+			width:s.em(137);
+			position:absolute;
+			bottom:-5em;
+			right:3em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	.button--type01{
+		margin-top:-1.5em;
+	}
+}
+
+
+
+#wrapper .homeConceptSection{
+	display:block;
+	position:relative;
+	padding-top:9em;
+	&::before{
+		content:"";
+		display:block;
+		width:120%;
+		height:20em;
+		position:absolute;
+		top:3em;
+		left:-10%;
+		background:#FFF;
+		border-radius: 100%;
+		z-index:-1;
+		@include s.media(m){
+			content:"";
+			position:absolute;
+			top:3em;
+			left:-10%;
+			height:50em;
+		}
+	}
+	&::after{
+		content:"";
+		display:block;
+		width:100%;
+		height:10em;
+		position:absolute;
+		top:0;
+		left:0;
+		background:s.$colorType03;
+		z-index:-2;
+		@include s.media(m){
+			height:25em;
+		}
+	}
+	&__inner{
+		display:block;
+		padding-bottom:4em;
+		@include s.media(m){
+			padding-bottom:4em;
+		}
+		&::before{
+			content:"";
+			display:block;
+			width:120%;
+			height:20em;
+			position:absolute;
+			bottom:3em;
+			left:-10%;
+			background:#FFF;
+			border-radius: 100%;
+			z-index:-1;
+			@include s.media(m){
+				height:50em;
+				content:"";
+				position:absolute;
+				bottom:16em;
+				left:-10%;
+			}
+		}
+		&::after{
+			content:"";
+			display:block;
+			width:100%;
+			height:10em;
+			position:absolute;
+			bottom:0;
+			left:0;
+			background:s.$colorType03;
+			z-index:-2;
+			@include s.media(m){
+				height:40em;
+			}
+		}
+	}
+}
+
+
+
+#wrapper .homeConceptBox{
+	&__image01{
+		width:100%;
+		display:block;
+		margin:0 auto 3em;
+		@include s.media(m){
+			width:s.em(634);
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__lead{
+		display:block;
+		text-align:center;
+		font-size:1.3em;
+		font-family: 'Zen Maru Gothic', serif;
+		font-weight:700;
+		margin-bottom:2em;
+		letter-spacing:0.1em;
+		@include s.media(m){
+			font-size:1.87em;
+		}
+	}
+	&__inner{
+		display:block;
+		@include s.media(m){
+			width:100%;
+			display:flex;
+			justify-content:space-between;
+			align-items:flex-start;
+		}
+	}
+	&__content{
+		display:block;
+		position:relative;
+		z-index:1;
+		@include s.media(m){
+			width:53%;
+			order: 2; 
+		}
+		p{
+			font-size:1.1em;
+			text-align:2.5em;
+			letter-spacing:0.1em;
+			font-family: 'Zen Kaku Gothic New', sans-serif;
+			font-weight:700;
+			margin-bottom:3em;
+			@include s.media(m){
+				font-size:1.12em;
+			}
+			b{
+				font-size:1.15em;
+				font-family: 'Zen Maru Gothic', serif;
+				font-weight:700;
+				@include s.media(m){
+					font-size:1.25em;
+				}
+				span{
+					display:inline-block;
+					position:relative;
+					&::before {
+						content:"\f111";
+		                font-family: 'icomoon';
+						color:s.$colorType02;
+						font-size:0.4em;
+						position:absolute;
+						top:-1.7em;
+						left:0.7em;
+						@include s.media(m){
+							position:absolute;
+							top:-1.5em;
+							left:0.7em;
+						}
+					}
+				}
+			}
+		}
+	}
+	&__image{
+		display:block;
+		position:relative;
+		@include s.media(m){
+			width:39%;
+			order: 1;
+		}
+		figure{
+			img{
+				width:100%;
+			}
+			&:nth-child(1){
+				width:70%;
+				overflow:hidden;
+				border-radius:1em;
+				margin-left:auto;
+				margin-right:auto;
+				@include s.media(m){
+					width:100%;
+					border-radius:2em;
+				}
+			}
+			&:nth-child(2){
+				width:10em;
+				position:absolute;
+				bottom:-3em;
+				right:-1em;
+				@include s.media(m){
+					width:s.em(242);
+					position:absolute;
+					bottom:-10em;
+					right:2em;
+				}
+			}
+		}
+	}
+	&__bottomImage{
+		width:140%;
+		margin-left:-20%;
+		display:block;
+		position:relative;
+		z-index:0;
+		margin-top:4em;
+		@include s.media(m){
+			width:140%;
+			margin-left:-20%;
+			margin-top:-3em;
+			margin-top:0;
+			position: relative;
+			z-index: 3;
+		}
+		@include s.media(xl){
+			width:170%;
+			margin-left:-35%;
+		}
+		img{
+			width:100%;
+		}
+	}
+	.button--type01{
+		margin-bottom:3em;
+		@include s.media(m){
+			margin-bottom:0;
+		}
+	}
+	.swiper-pagination{
+		z-index:999;
+	}
+	.swiper-button-prev{
+		z-index:999;
+	}
+	.swiper-button-next{
+		z-index:999;
+	}
+}
+
+
+
+#wrapper .homeWorkSection{
+	display:block;
+	background:s.$colorType03 url(../img/common/bgPttern.png) no-repeat center bottom;
+	background-size:100% auto;
+	padding-bottom:1em;
+	margin-bottom:3em;
+	@include s.media(m){
+		background:s.$colorType03 url(../img/common/bgPttern.png) repeat-x center bottom;
+		background-size:auto auto;
+		padding-bottom:4em;
+	}
+}
+
+#wrapper .--typeScrollSideLine{
+	display:block;
+	position:relative;
+	-webkit-transition: all .2s ease;
+	transition: all .5s ease;
+	&::before{
+		@include s.media(m){
+			display:block;
+			content:"";
+			width:2em;
+			height:120%;
+			background:#FFF;
+			position:absolute;
+			top:-20%;
+			left:-2em;
+			-webkit-transition: all .2s ease;
+			transition: all .5s ease;
+			z-index:1;
+		}
+	}
+	&::after{
+		@include s.media(m){
+			display:block;
+			content:"";
+			width:2em;
+			height:120%;
+			background:#FFF;
+			position:absolute;
+			top:-20%;
+			right:-2em;
+			-webkit-transition: all .2s ease;
+			transition: all .5s ease;
+			z-index:2;
+		}
+	}
+	&.active{
+		&::before{
+			@include s.media(m){
+				position:absolute;
+				top:-20%;
+				left:0;
+				-webkit-transition: all .2s ease;
+				transition: all .5s ease;
+			}
+		}
+		&::after{
+			@include s.media(m){
+				position:absolute;
+				top:-20%;
+				right:0;
+				-webkit-transition: all .2s ease;
+				transition: all .5s ease;
+			}
+		}
+	}
+}
+
+#wrapper .homeWorkBox{
+	img{
+		width:100%;
+	}
+	&__sentence{
+		margin-bottom:3em;
+		position:relative;
+		z-index:1;
+		@include s.media(m){
+			font-size:1.1em;
+			text-align:center;
+			margin-bottom:6em;
+		}
+	}
+	&__inner{
+		display:block;
+		margin-bottom:3em;
+		@include s.media(m){
+			width:100%;
+			display:flex;
+			justify-content:center;
+			margin-bottom:6em;
+		}
+		&.--typeLeft{
+			.homeWorkBox__content{
+				@include s.media(m){
+					order: 2;
+					padding-right:0;
+					padding-left:3em;
+				}
+			}
+			.homeWorkBox__title{
+				&::before {
+					@include s.media(m){
+						position:absolute;
+						top:-6em;
+						left:auto;
+						right:-10em;
+					}
+				}
+			}
+			.homeWorkBox__imageBox{
+				@include s.media(m){
+					order: 1;
+				}
+			}
+			.homeWorkBox__image{
+				@include s.media(m){
+					margin-left:-65%;
+					border-radius: 0 2em 2em 0;
+				}
+			}
+			.homeWorkBox__imageCopy{
+				@include s.media(m){
+					position:absolute;
+					left:-5em;
+					top:-2em;
+				}
+			}
+			.homeWorkBox__subImage{
+				@include s.media(m){
+					justify-content:flex-start;
+				}
+			}
+		}
+	}
+	&__content{
+		display:block;
+		position:relative;
+		margin-bottom:3em;
+		@include s.media(m){
+			width:40%;
+			padding-right:3em;
+			padding-top:3em;
+			margin-bottom:0;
+		}
+	}
+	&__imageBox{
+		display:block;
+		position:relative;
+		@include s.media(m){
+			width:60%;
+		}
+	}
+	&__imageCopy{
+		width:90%;
+		display:block;
+		position:absolute;
+		left:3em;
+		top:-1em;
+		@include s.media(m){
+			width:s.em(658);
+			position:absolute;
+			left:3em;
+			top:-2em;
+		}
+	}
+	&__image{
+		width:112%;
+		display:block;
+		margin-left:-6%;
+		@include s.media(m){
+			width:165%;
+			border-radius: 2em 0 0 2em;
+			overflow:hidden;
+			margin-left:0;
+		}
+	}
+	&__subImage{
+		width:100%;
+		display:flex;
+		justify-content:flex-end;
+		margin-top:-4em;
+		position:relative;
+		z-index:1;
+		@include s.media(m){
+			width:105%;
+		}
+		li{
+			width:15em;
+			overflow:hidden;
+			border-radius:50%;
+			+li{
+				margin-left:2em;
+			}
+		}
+	}
+	&__title{
+		display:block;
+		margin-bottom:1em;
+		position:relative;
+		@include s.media(m){
+			margin-bottom:2em;
+		}
+		&::before {
+			content:" ";
+			width:10em;
+			height:10em;
+			display:block;
+			border-radius:50%;
+			border:#FFF solid 0.6em;
+			position:absolute;
+			top:-3em;
+			left:-5em;
+			@include s.media(m){
+				width:17em;
+				height:17em;
+				position:absolute;
+				top:-6em;
+				left:-10em;
+			}
+		}
+		span{
+			font-size:1.1em;
+			font-family: 'Zen Kaku Gothic New', sans-serif;
+			font-weight:700;
+			letter-spacing:0.1em;
+			display:inline-block;
+			margin-bottom:0.5em;
+			position:relative;
+			margin-right:0.5em;
+			@include s.media(m){
+				margin-right:0;
+				display:block;
+				font-size:1.25em;
+			}
+		}
+		h4{
+			font-size:1.4em;
+			font-family: 'Zen Maru Gothic', serif;
+			font-weight:700;
+			display:inline-block;
+			background:#FFF;
+			padding:0.3em 1em;
+			border-radius:0.5em;
+			position:relative;
+			@include s.media(m){
+				font-size:2em;
+			}
+		}
+	}
+	&__lead{
+		font-size:1.37em;
+		font-family: 'Zen Maru Gothic', serif;
+		font-weight:700;
+		line-height:2em;
+		margin-bottom:0.5em;
+		position:relative;
+		text-align:center;
+		@include s.media(m){
+			text-align:left;
+		}
+		+p{
+			margin-bottom:1.5em;
+			@include s.media(m){
+				margin-bottom:3em;
+			}
+		}
+	}
+}
+
+#wrapper .homeEventSection{
+	display:block;
+	position:relative;
+	&::before {
+		content:" ";
+		width:100%;
+		height:25em;
+		display:block;
+		background:s.$colorType02;
+		position:absolute;
+		bottom:0;
+		left:0;
+		@include s.media(m){
+		}
+	}
+}
+
+#wrapper .homeEventBox{
+	display:block;
+	position:relative;
+	padding-bottom:3em;
+	img{
+		width:100%;
+	}
+	&__sentence{
+		margin-bottom:3em;
+		position:relative;
+		z-index:1;
+		@include s.media(m){
+			font-size:1.1em;
+			text-align:center;
+			margin-bottom:3em;
+		}
+	}
+	&__image01{
+		width:5em;
+		position:absolute;
+		top:0;
+		right:1em;
+		z-index:1;
+		@include s.media(m){
+			width:s.em(155);
+			position:absolute;
+			top:0;
+			right:8em;
+		}
+	}
+	&__image02{
+		width:4em;
+		position:absolute;
+		top:-1em;
+		left:1em;
+		z-index:1;
+		@include s.media(m){
+			width:s.em(129);
+			position:absolute;
+			top:3em;
+			left:8em;
+		}
+	}
+	&__image03{
+		width:6em;
+		position:absolute;
+		bottom:-6em;
+		right:-1em;
+		z-index:1;
+		@include s.media(m){
+			width:s.em(156);
+			position:absolute;
+			bottom:23em;
+			right:-12em;
+		}
+	}
+	&__inner{
+		display:block;
+		padding-bottom:3em;
+		width:120%;
+		margin-left:-10%;
+		@include s.media(m){
+			width:100%;
+			margin-left:0;
+		}
+	}
+	&__article{
+		a{
+			display:block;
+			overflow:hidden;
+			border-radius:2em;
+			background:#FFF;
+			position:relative;
+			figure .adjustBox__inner img{
+			  position: absolute;
+			  width: 100%;
+			  height: 100%;
+			  top: 0;
+			  right: 0;
+			  bottom: 0;
+			  left: 0;
+			  margin: auto;
+			  object-fit: cover;
+			  -moz-transform: none;
+			  -ms-transform: none;
+			  -webkit-transform: none;
+			  transform: none;
+			  transition: all 0.3s;
+			  transform: scale(1);
+			}
+			&:hover figure .adjustBox__inner img{
+				transform: scale(1.1);
+			}
+			&:hover{
+				color:s.$colorType02;
+			}
+			&:before{
+				content:" ";
+				width:2em;
+				height:2em;
+				color:#FFF;
+				background:url(../img/common/imgArrow03.svg) no-repeat center 0.7em;
+				border-left:#777 solid 1px;
+				background-size:0.7em auto;
+				position:absolute;
+				bottom:1em;
+				right:1em;
+				-webkit-transition: all .2s ease;
+					    transition: all .2s ease;
+				@include s.media(m){
+					width:4em;
+					position:absolute;
+					bottom:1em;
+					right:1em;
+				}
+			}
+		}
+	}
+	&__content{
+		padding:1em 2em;
+		p{
+			&:nth-child(1){
+				font-size:1.1em;
+				font-family: 'Zen Maru Gothic', serif;
+				font-weight:700;
+				margin-bottom:2em;
+				@include s.media(m){
+					min-height:5em;
+				}
+			}
+			&:nth-child(2){
+				font-family: 'Zen Kaku Gothic New', sans-serif;
+				font-weight:700;
+				color:s.$colorType02;
+			}
+		}
+	}
+	.button--type01 a{
+		background:#FFF;
+		&:hover{
+			background:#000;
+		}
+	}
+}
+
+body.archive #wrapper .homeEventBox{
+	&__article{
+		a{
+			background:#EDEDED;
+			&:hover{
+				background:#e1dfdf;
+			}
+		}
+	}
+	&__content{
+		padding:1em 1em;
+		@include s.media(m){
+			padding:1em 2em;
+		}
+		p{
+			&:nth-child(1){
+				font-size:1em;
+				@include s.media(m){
+					font-size:1.1em;
+				}
+			}
+		}
+	}
+}
+
+.homeStoreSection{
+	display:block;
+	background:#FFF url(../img/home/imgPattern01.png) repeat center top;
+	background-size:20% auto;
+	padding:2em 0;
+	position:relative;
+	@include s.media(m){
+		padding:0 0;
+		background:#FFF url(../img/home/imgPattern01.png) repeat center top;
+		background-size:auto;
+	}
+}
+
+#wrapper .homeStoreBox{
+	display:block;
+	position:relative;
+	padding-bottom:3em;
+	@include s.media(m){
+		padding-top:6em;
+		padding-bottom:6em;
+	}
+	&__image01{
+		width:9em;
+		position:absolute;
+		top:-1em;
+		left:-1em;
+		z-index:1;
+		@include s.media(m){
+			width:s.em(362);
+			position:absolute;
+			top:-7em;
+			left:0;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__inner01{
+		display:block;
+		background:#EDEDED;
+		border-radius:1em;
+		padding:2em;
+		margin-bottom:3em;
+		@include s.media(m){
+			padding:3em;
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+		}
+	}
+	&__mapBox{
+		display:block;
+		border:#FFF solid 1px;
+		margin-bottom:2em;
+		@include s.media(m){
+			width:48%;
+			margin-bottom:0;
+		}
+	}
+	&__information{
+		display:block;
+		@include s.media(m){
+			width:48%;
+		}
+		dt{
+			font-size:1.2em;
+			font-family: 'Zen Maru Gothic', serif;
+			font-weight:700;
+			margin-bottom:0.5em;
+			color:s.$colorType02;
+			@include s.media(m){
+				font-size:1.5em;
+			}
+		}
+		dd{
+			font-family: 'Zen Kaku Gothic New', sans-serif;
+			font-weight:500;
+			@include s.media(m){
+				font-size:1.1em;
+			}
+		}
+	}
+	&__inner02{
+		display:block;
+		margin-bottom:1em;
+		@include s.media(m){
+			display:flex;
+			justify-content:space-between;
+			margin-bottom:3em;
+		}
+	}
+	&__contact{
+		display:block;
+		@include s.media(m){
+			width:37%;
+		}
+		a{
+			display:block;
+			border-radius:1em 1em 0 0;
+			background:s.$colorType02;
+			text-align:center;
+			padding:2em 2em 0;
+			line-height:1.7;
+			@include s.media(m){
+				padding:2em;
+				border-radius:1em;
+			}
+			&:hover{
+				text-decoration:none;
+				background:#EDEDED;
+				small{
+					color:s.$colorType02;
+				}
+			}
+		}
+		span{
+			display:inline-block;
+			width:8.4em;//1.2em
+			margin-right:1em;
+			@include s.media(m){
+				width:s.em(178);
+			}
+			img{
+				width:100%;
+			}
+		}
+		small{
+			color:#FFF;
+			font-family: 'Zen Maru Gothic', serif;
+			font-weight:700;
+			font-size:1.2em;
+			line-height:2em;
+		}
+	}
+	&__reservation{
+		display:block;
+		@include s.media(m){
+			width:60%;
+		}
+		a{
+			font-size:1.2em;
+			display:block;
+			height:100%;
+			position:relative;
+			font-family: 'Zen Maru Gothic', serif;
+			font-weight:700;
+			padding:1.5em;
+			position:relative;
+			line-height:1.7em;
+			border-radius:0 0 1em 1em;
+			background:s.$colorType02;
+			@include s.media(m){
+				font-size:1.37em;
+				border-radius:1em;
+			}
+			&:before{
+				content:" ";
+				width:2em;
+				height:2em;
+				color:#FFF;
+				background:url(../img/common/imgArrow04.svg) no-repeat center 0.7em;
+				background-size:0.7em auto;
+				border-left:#000 solid 1px;
+				position:absolute;
+				top:50%;
+				right:1em;
+				margin-top:-1em;
+				-webkit-transition: all .2s ease;
+					    transition: all .2s ease;
+				@include s.media(m){
+					width:6em;
+					background:url(../img/common/imgArrow04.svg) no-repeat center 0.3em;
+					background-size:1.4em auto;
+					position:absolute;
+					top:50%;
+					right:1em;
+				}
+			}
+			&:hover{
+				background:#EDEDED;
+				color:s.$colorType02;
+			}
+		}
+	}
+	&__inner03{
+		display:block;
+		margin-bottom:3em;
+		@include s.media(m){
+			display:flex;
+			justify-content:space-between;
+		}
+	}
+	&__company{
+		display:block;
+		border-radius:1em;
+		background:#EDEDED;
+		overflow:hidden;
+		margin-bottom:1em;
+		@include s.media(m){
+			margin-bottom:0;
+		}
+		img{
+			width:100%;
+		}
+		@include s.media(m){
+			width:37%;
+		}
+		dl{
+			padding:1em 2em 2em;
+			display:block;
+			dt{
+				font-size:1.3em;
+				font-family: 'Zen Maru Gothic', serif;
+				font-weight:700;
+				color:s.$colorType02;
+				@include s.media(m){
+					font-size:2.25em;
+				}
+			}
+			dd{
+				font-family: 'Zen Kaku Gothic New', sans-serif;
+				font-weight:500;
+				@include s.media(m){
+					font-size:1.1em;
+				}
+			}
+		}
+	}
+	&__storeList{
+		width:100%;
+		display:flex;
+		justify-content:space-between;
+		flex-wrap:wrap;
+		@include s.media(m){
+			width:60%;
+		}
+	}
+	&__store{
+		width:48%;
+		border-radius:1em;
+		background:#EDEDED;
+		overflow:hidden;
+		&:nth-child(1){
+			margin-bottom:1em;
+			@include s.media(m){
+				margin-bottom:2em;
+			}
+		}
+		&:nth-child(2){
+			margin-bottom:1em;
+			@include s.media(m){
+				margin-bottom:2em;
+			}
+		}
+		a,span{
+			width:100%;
+			height:100%;
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+		}
+		a{
+			&:hover{
+				color:s.$colorType02;
+			}
+		}
+		dl{
+			width:70%;
+			display:block;
+			padding-left:1em;
+			@include s.media(m){
+				padding-left:2em;
+			}
+			dt{
+				font-size:0.9em;
+				font-family: 'Zen Maru Gothic', serif;
+				font-weight:700;
+				color:s.$colorType02;
+				margin-bottom:0.2em;
+				@include s.media(m){
+					font-size:1.25em;
+				}
+			}
+			dd{
+				font-size:1.2em;
+				font-family: 'Zen Maru Gothic', serif;
+				font-weight:700;
+				line-height:1.4;
+				@include s.media(m){
+					font-size:1.6em;
+					line-height:1.7;
+				}
+			}
+		}
+		figure{
+			width:27%;
+			height:100%;
+			display:block;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+	}
+}
+
+
+//後から店舗情報修正分20240409
+#wrapper .homeStoreBox{
+	display:block;
+	.title--type01 span:nth-child(2){
+		//color:s.$colorType01;
+	}
+	&__headBox{
+		display:block;
+		background:s.$colorType03;
+		border-radius:1em;
+		padding:1.5em;
+		margin-bottom:2em;
+		@include s.media(m){
+			padding:3em 3.75em;
+		}
+		.googleMapBox{
+			position: relative;
+			padding-bottom: 75%;
+			height: 0;
+			overflow: hidden;
+			@include s.media(m){
+				padding-bottom: 40%;
+			}
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100% !important;
+				height: 100% !important;
+			}
+		}
+	}
+	&__headImage{
+		display:block;
+		overflow:hidden;
+		border-radius:1em 1em 0 0;
+		margin-bottom:1em;
+		@include s.media(m){
+			margin-bottom:2em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__headContent{
+		width:100%;
+		margin-bottom:1em;
+		@include s.media(m){
+			display:flex;
+			justify-content:space-between;
+			margin-bottom:2em;
+		}
+	}
+	&__mapBox{
+		display:block;
+		border:#FFF solid 1px;
+		margin-bottom:1.5em;
+		@include s.media(m){
+			width:49%;
+			margin-bottom:0;
+		}
+	}
+	&__headInformation{
+		display:block;
+		@include s.media(m){
+			width:48%;
+		}
+		p:nth-child(1){
+			font-size:1.2em;
+			color:s.$colorType02;
+			font-family: 'Zen Maru Gothic', serif;
+			font-weight:700;
+			@include s.media(m){
+				font-size:1.5em;
+				margin-bottom:1.5em;
+			}
+		}
+	}
+	&__insideBox{
+		display:block;
+		overflow:hidden;
+		border-radius:0 0 1em 1em;
+	}
+	&__inside{
+		position: relative;
+		padding-bottom: 56.3%;
+		height: 0;
+		overflow: hidden;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}
+	&__inner{
+		display:block;
+		@include s.media(m){
+			width:100%;
+			display:flex;
+			justify-content:space-between;
+		}
+	}
+	&__companyBox{
+		display:block;
+		background:#ededed;
+		border-radius:1em;
+		overflow:hidden;
+		margin-bottom:1em;
+		@include s.media(m){
+			width:49%;
+			margin-bottom:0;
+		}
+		figure{
+			margin-bottom:1.2em;
+			img{
+				width:100%;
+			}
+		}
+		dl{
+			display:block;
+			width:90%;
+			margin-left:auto;
+			margin-right:auto;
+			@include s.media(m){
+				width:80%;
+			}
+			dt{
+				color:s.$colorType02;
+				font-family: 'Zen Maru Gothic', serif;
+				font-weight:700;
+				margin-bottom:0.5em;
+				font-size:1.3em;
+				@include s.media(m){
+					font-size:2.1em;
+				}
+			}
+			dd{
+				padding-bottom:1.5em;
+			}
+		}
+	}
+	&__storeListBox{
+		display:block;
+		@include s.media(m){
+			width:49%;
+		}
+	}
+	&__storeVisual{
+		display:block;
+		margin-bottom:1em;
+		@include s.media(m){
+			margin-bottom:0;
+		}
+		a{
+			width:100%;
+			display:flex;
+			justify-content:space-between;
+			//align-items:center;
+			overflow:hidden;
+			border-radius:1em;
+			background:#ededed;
+			&:hover{
+				color:s.$colorType03;
+			}
+			p{
+				width:60%;
+				padding-left:2em;
+				padding-top:2em;
+				span{
+					&:nth-child(1){
+						font-family: 'Zen Maru Gothic', serif;
+						font-weight:700;
+						color:s.$colorType02;
+						display:block;
+						font-size:1.1em;
+						@include s.media(m){
+							font-size:1.25em;
+						}
+					}
+					&:nth-child(2){
+						font-family: 'Zen Maru Gothic', serif;
+						font-weight:700;
+						display:block;
+						font-size:1.2em;
+						@include s.media(m){
+							font-size:1.6em;
+						}
+					}
+				}
+			}
+			figure{
+				width:40%;
+				img{
+					width:100%;
+				}
+			}
+		}
+		+.homeStoreBox__storeVisual{
+			@include s.media(m){
+				margin-top:2em;
+			}
+		}
+	}
+	&__storeListBox{
+		display:block;
+	}
+	&__reservationButton{
+		display:block;
+		margin-bottom:1em;
+		a{	
+			display:block;
+			background:s.$colorType02;
+			display:block;
+			border-radius:1em;
+			@include s.media(m){
+				display:flex;
+				justify-content:space-between;
+				margin-bottom:3em;
+			}
+			&:hover{
+				text-decoration:none;
+				background:#EDEDED;
+				color:s.$colorType02;
+				small{
+					color:s.$colorType02;
+				}
+			}
+		}
+	}
+	&__reservationButtonTitle{
+		display:block;
+		text-align:center;
+		padding:2em 2em 0;
+		line-height:1.7;
+		@include s.media(m){
+			width:37%;
+			padding:2em;
+		}
+		span{
+			display:inline-block;
+			width:8.4em;//1.2em
+			margin-right:1em;
+			@include s.media(m){
+				width:s.em(178);
+			}
+			img{
+				width:100%;
+			}
+		}
+		small{
+			color:#FFF;
+			font-family: 'Zen Maru Gothic', serif;
+			font-weight:700;
+			font-size:1.2em;
+			line-height:2em;
+		}
+	}
+	&__reservationButtonSent{
+		display:block;
+		font-size:1.2em;
+		display:block;
+		height:100%;
+		position:relative;
+		font-family: 'Zen Maru Gothic', serif;
+		font-weight:700;
+		padding:1.5em;
+		position:relative;
+		line-height:1.7em;
+		@include s.media(m){
+			width:60%;
+			font-size:1.37em;
+			border-radius:1em;
+		}
+		span{
+			&:before{
+				content:" ";
+				width:2em;
+				height:2em;
+				color:#FFF;
+				background:url(../img/common/imgArrow04.svg) no-repeat center 0.7em;
+				background-size:0.7em auto;
+				border-left:#000 solid 1px;
+				position:absolute;
+				top:50%;
+				right:1em;
+				margin-top:-1em;
+				-webkit-transition: all .2s ease;
+					    transition: all .2s ease;
+				@include s.media(m){
+					width:6em;
+					background:url(../img/common/imgArrow04.svg) no-repeat center 0.3em;
+					background-size:1.4em auto;
+					position:absolute;
+					top:50%;
+					right:1em;
+				}
+			}
+		}
+	}
+}

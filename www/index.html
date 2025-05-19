@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700&family=Zen+Maru+Gothic:wght@700&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body id="home" class="home">
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+		<div class="header__siteTitleBox">
+			<h1 class="header__siteTitle"><a href="<?php echo home_url(); ?>">
+				<img src="img/common/siteTitle.svg" alt="MEMIDA" />
+				<small>宝塚市役所前店</small>
+			</a></h1>
+		<!-- /.header__siteTitleBox --></div>
+			
+		<div id="pageTopFix">
+        		<div class="header__inner">
+					<nav class="globalNavi">
+						<ul class="globalNavi__menu__main clearfix">
+							<li><a href="<?php echo home_url(); ?>/concept"><small>CONCEPT</small><span>私たちについて</span></a></li>
+							<li><a href="<?php echo home_url(); ?>/car"><small>CAR</small><span>新車販売</span></a></li>
+							<li><a href="<?php echo home_url(); ?>/camper"><small>CAMPER</small><span>軽キャンピングカー</span></a></li>
+							<li><a href="<?php echo home_url(); ?>/nurture"><small>NURTURE</small><span>食育</span></a></li>
+							<li><a href="<?php echo home_url(); ?>/store"><small>STORE</small><span>店舗情報</span></a></li>
+							<li><a href="<?php echo home_url(); ?>/company"><small>COMPANY</small><span>会社概要</span></a></li>
+							<li><a href="<?php echo home_url(); ?>/contact"><small>CONTACT </small><span>お問い合わせ</span></a></li>
+						</ul>
+				    <!-- /.globalNavi --></nav>
+				<!-- /.header__inner --></div>
+		<!-- /#pageTopFix --></div>
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<small>MENU</small>
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+					           		<div class="globalNaviSmall__siteTitle">
+									<img src="img/common/siteTitle.svg" alt="MEMIDA" />
+									<small>宝塚市役所前店</small>
+					           		<!-- /.globalNaviSmall__siteTitle --></div>
+									<ul class="globalNaviSmall__menu__main">
+										<li><a href="<?php echo home_url(); ?>/concept"><small>CONCEPT</small><span>私たちについて</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/car"><small>CAR</small><span>新車販売</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/camper"><small>CAMPER</small><span>軽キャンピングカー</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/nurture"><small>NURTURE</small><span>食育</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/store"><small>STORE</small><span>店舗情報</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/company"><small>COMPANY</small><span>会社概要</span></a></li>
+										<li><a href="<?php echo home_url(); ?>/contact"><small>CONTACT </small><span>お問い合わせ</span></a></li>
+									</ul>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+
+		    <!-- /.globalNaviSmall --></nav>
+
+	<!-- /#header --></header>
+    
+
+<section class="mainVisual">
+    	<div class="inBase clearfix">
+	    	<div class="mainVisual__copy"><h3><img src="img/home/maincopy.svg" alt="THREE WAY HAPPINESS" /></h3><!-- /.mainVisual__copy --></div>
+	    	<div class="mainVisual__word"><h2>
+	    		<span>人と</span><span>クルマと</span><span>「和」のこころ。</span>
+	    	</h2><!-- /.mainVisual__word --></div>
+
+
+<div class="sliderBox--typeMainVisual">
+
+	    	<div class="mainVisual__inner">
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide">
+          <div class="slide-media img-cover">
+          	<span><img src="img/home/imgMainVisual01.jpg" alt="食育" class="isPC"></span>
+          	<span><img src="img/home/imgMainVisual01_sp.jpg" alt="食育" class="isSP"></span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide">
+          <div class="slide-media img-cover">
+          	<span><img src="img/home/imgMainVisual02.jpg" alt="新車" class="isPC"></span>
+          	<span><img src="img/home/imgMainVisual02_sp.jpg" alt="新車" class="isSP"></span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide">
+          <div class="slide-media img-cover">
+          	<span><img src="img/home/imgMainVisual03.jpg" alt="軽キャン" class="isPC"></span>
+          	<span><img src="img/home/imgMainVisual03_sp.jpg" alt="軽キャン" class="isSP"></span>
+          </div>
+        </div>
+      </div>
+    </div><!-- /swiper-wrapper -->
+  </div><!-- /swiper -->
+
+
+	    	<!-- /.mainVisual__inner --></div>
+
+
+</div>
+
+
+
+
+			<!-- Slider全体のコンテナ -->
+			<div class="swiper-thumb">
+			    <!-- Sliderの内包コンテナ -->
+			    <div class="swiper-wrapper">
+			        <!-- Slideさせたいコンテンツ -->
+			        <div class="swiper-slide">
+	    				<div class="mainVisual__inner --typeButton">
+				    		<div class="mainVisual__button"><a href="<?php echo home_url(); ?>/nurture">
+				    			<dl>
+				    				<dt>食育</dt>
+				    				<dd>心豊かな人生を生きてほしい</dd>
+				    			</dl>
+				    		</a><!-- /.mainVisual__button --></div>
+				    	<!-- /.mainVisual__inner --></div>
+				    	<div class="mainVisual__bottomButtonBox">
+				    		<div class="mainVisual__bottomButton"><a href="<?php echo home_url(); ?>/car">
+				    			<dl>
+				    				<dt>新車</dt>
+				    				<dd>快適な暮らしを手に入れたい</dd>
+				    			</dl>
+				    			<figure><img src="img/home/buttomMainVisual02.jpg" alt="新車" /></figure>
+						</a><!-- /.mainVisual__bottomButton --></div>
+				    		<div class="mainVisual__bottomButton"><a href="<?php echo home_url(); ?>/camper">
+				    			<dl>
+				    				<dt>軽キャン</dt>
+				    				<dd>暮らしにときめきを与えたい</dd>
+				    			</dl>
+				    			<figure><img src="img/home/buttomMainVisual03.jpg" alt="軽キャン" /></figure>
+						</a><!-- /.mainVisual__bottomButton --></div>
+				    	<!-- /.mainVisual__bottomButtonBox --></div>
+				<!-- /.swiper-slide --></div>
+
+			        <div class="swiper-slide">
+	    				<div class="mainVisual__inner --typeButton">
+				    		<div class="mainVisual__button"><a href="<?php echo home_url(); ?>/car">
+				    			<dl>
+				    				<dt>新車</dt>
+				    				<dd>快適な暮らしを手に入れたい</dd>
+				    			</dl>
+				    		</a><!-- /.mainVisual__button --></div>
+				    	<!-- /.mainVisual__inner --></div>
+				    	<div class="mainVisual__bottomButtonBox">
+				    		<div class="mainVisual__bottomButton"><a href="<?php echo home_url(); ?>/camper">
+				    			<dl>
+				    				<dt>軽キャン</dt>
+				    				<dd>暮らしにときめきを与えたい</dd>
+				    			</dl>
+				    			<figure><img src="img/home/buttomMainVisual03.jpg" alt="軽キャン" /></figure>
+						</a><!-- /.mainVisual__bottomButton --></div>
+				    		<div class="mainVisual__bottomButton"><a href="<?php echo home_url(); ?>/nurture">
+				    			<dl>
+				    				<dt>食育</dt>
+				    				<dd>心豊かな人生を生きてほしい</dd>
+				    			</dl>
+				    			<figure><img src="img/home/buttomMainVisual01.jpg" alt="食育" /></figure>
+						</a><!-- /.mainVisual__bottomButton --></div>
+				    	<!-- /.mainVisual__bottomButtonBox --></div>
+				<!-- /.swiper-slide --></div>
+
+			        <div class="swiper-slide">
+	    				<div class="mainVisual__inner --typeButton">
+				    		<div class="mainVisual__button"><a href="<?php echo home_url(); ?>/camper">
+				    			<dl>
+				    				<dt>軽キャン</dt>
+				    				<dd>暮らしにときめきを与えたい</dd>
+				    			</dl>
+				    		</a><!-- /.mainVisual__button --></div>
+				    	<!-- /.mainVisual__inner --></div>
+				    	<div class="mainVisual__bottomButtonBox">
+				    		<div class="mainVisual__bottomButton"><a href="<?php echo home_url(); ?>/nurture">
+				    			<dl>
+				    				<dt>食育</dt>
+				    				<dd>心豊かな人生を生きてほしい</dd>
+				    			</dl>
+				    			<figure><img src="img/home/buttomMainVisual01.jpg" alt="食育" /></figure>
+						</a><!-- /.mainVisual__bottomButton --></div>
+				    		<div class="mainVisual__bottomButton"><a href="<?php echo home_url(); ?>/car">
+				    			<dl>
+				    				<dt>新車</dt>
+				    				<dd>快適な暮らしを手に入れたい</dd>
+				    			</dl>
+				    			<figure><img src="img/home/buttomMainVisual02.jpg" alt="新車" /></figure>
+						</a><!-- /.mainVisual__bottomButton --></div>
+				    	<!-- /.mainVisual__bottomButtonBox --></div>
+				<!-- /.swiper-slide --></div>
+
+
+
+
+	    	<div class="mainVisual__bottomButtonBox --pageButton">
+	    		<div class="mainVisual__bottomButton"><span class="mainSlidebuttonNext">
+	    			<figure><img src="img/home/buttomMainVisualEmpty.png" alt="次へ" /></figure>
+			</span><!-- /.mainVisual__bottomButton --></div>
+	    		<div class="mainVisual__bottomButton"><span class="mainSlidebuttonBack">
+	    			<figure><img src="img/home/buttomMainVisualEmpty.png" alt="前へ" /></figure>
+			</span><!-- /.mainVisual__bottomButton --></div>
+	    	<!-- /.mainVisual__bottomButtonBox --></div>
+
+    </div><!-- /swiper-wrapper -->
+  </div><!-- /swiper -->
+
+		<!-- /.inBase --></div>
+    <!-- /.mainVisual --></section>
+
+
+
+
+
+	<div id="contents" class="clearfix">
+		<div class="homeNewsSection">
+			<div class="inBase">
+			<div class="inBase__inner clearfix">
+				<div class="homeNewsBox">
+					<div class="title--type01 --typeNews"><h3><img src="img/home/news.svg" alt="NEWS" /></h3><span>新着情報</span></div>
+					<figure class="homeNewsBox__image01"><img src="img/home/imgNews01.png" alt="新着情報" /></figure>
+					<div class="homeNewsBox__inner">
+						<ul>
+							<li><a href="#"><span>2024. 02. 01</span><span>お知らせのタイトルがここに入ります</span></a></li>
+							<li><a href="#"><span>2024. 02. 01</span><span>お知らせのタイトルがここに入ります</span></a></li>
+							<li><a href="#"><span>2024. 02. 01</span><span>お知らせのタイトルがここに入ります</span></a></li>
+						</ul>
+						<div class="button--type01 tC">
+							<a href="<?php echo home_url(); ?>/news"><img src="img/common/more.svg" alt="MORE" /></a>
+						<!-- /.button--type01 --></div>
+						<figure class="homeNewsBox__image02"><img src="img/home/imgNews02.png" alt="新着情報" /></figure>
+					<!-- /.inBase__inner --></div>
+				<!-- /.homeNewsBox --></div>
+			<!-- /.inBase__inner --></div>
+			<!-- /.inBase --></div>
+		<!-- /.homeNewsSection --></div>
+
+		<div class="homeConceptSection"><div class="homeConceptSection__inner">
+			<div class="inBase clearfix">
+				<div class="homeConceptBox">
+					<div class="title--type01 --typeConcept tC"><h3><img src="img/home/concept.svg" alt="CONCEPT" /></h3><span>私たちについて</span></div>
+					<figure class="homeConceptBox__image01"><img src="img/home/imgConcept01.png" alt="私たちについて" /></figure>
+					<div class="homeConceptBox__lead"><h4>“三方よし”の信念で  <br class="hidden-pc">地域がつながる場作りを</h4><!-- /.homeConceptBox__lead --></div>
+					<div class="homeConceptBox__inner">
+						<div class="homeConceptBox__content">
+							<p>私たちが暮らす日本には、<br>
+								一人で生きる強さよりも、他者とのつながりや調和を尊ぶ、<br>
+								世界が称賛する素晴らしい文化があります。</p>
+							<p>子供からお年寄りの方までがここ宝塚に集い、繋がることで、<br>
+								地域社会はより豊かに、その豊かさが社会全体へと広がっていきます。</p>
+							<p><b>うれしい<span>わ</span>、たのしい<span>わ</span>、おいしい<span>わ</span>、</b><br>
+								<b>みんなの「和」。</b></p>
+							<p>メミダワークス宝塚市役所前店は、<br>
+								子供たちの、さらにその子供たちの生きる社会を見据えて、<br>
+								長年営んできた自動車関連事業をはじめとし、<br>
+								これまでの枠を超えた、様々な活動を展開して参ります。</p>
+							<div class="button--type01"><a href="<?php echo home_url(); ?>/concept"><img src="img/common/more.svg" alt="MORE" /></a></div>
+						<!-- /.homeConceptBox__content --></div>
+						<div class="homeConceptBox__image">
+							<figure><img src="img/home/imgConcept00.jpg" alt="店舗写真" /></figure>
+							<figure><img src="img/home/imgConcept02.png" alt="地域の繋がり" /></figure>
+						<!-- /.homeConceptBox__image --></div>
+					<!-- /.homeConceptBox__inner --></div>
+				<!-- /.homeConceptBox --></div>
+				<figure class="homeConceptBox__bottomImage"><img src="img/home/imgConcept03.png" alt="地域写真" /></figure>
+			<!-- /.inBase --></div>
+		<!-- /.homeConceptSection__inner --></div><!-- /.homeConceptSection --></div>
+
+		<div class="homeWorkSection --typeScrollSideLine">
+			<div class="inBase">
+			<div class="inBase__inner clearfix">
+				<div class="homeWorkBox">
+					<div class="title--type01 --typeWork tC"><h3><img src="img/home/work.svg" alt="WORK" /></h3><span>事業内容</span></div>
+					<p class="homeWorkBox__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+					
+					<div class="homeWorkBox__inner">
+						<div class="homeWorkBox__content">
+							<div class="homeWorkBox__title">
+								<span>CAR</span>
+								<h4>新車販売</h4>
+							<!-- /.homeWorkBox__title --></div>
+							<h5 class="homeWorkBox__lead">見た目も性能もこだわりたい<br>自分らしいカーライフを。</h5>
+							<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							<div class="button--type01"><a href="<?php echo home_url(); ?>/car"><img src="img/common/more.svg" alt="MORE" /></a></div>
+						<!-- /.homeWorkBox__content --></div>
+						<div class="homeWorkBox__imageBox">
+							<p class="homeWorkBox__imageCopy"><img src="img/home/newcarlife.svg" alt="NEW CAR LIFE" /></p>
+							<figure class="homeWorkBox__image"><img src="img/home/imgWorkMain01.jpg" alt="新車販売" /></figure>
+							<ul class="homeWorkBox__subImage">
+								<li><img src="img/home/imgWorkSub01.jpg" alt="新車販売" /></li>
+								<li><img src="img/home/imgWorkSub02.jpg" alt="新車販売" /></li>
+							</ul>
+						<!-- /.homeWorkBox__imageBox --></div>
+					<!-- /.homeWorkBox__inner --></div>
+					
+					<div class="homeWorkBox__inner --typeLeft">
+						<div class="homeWorkBox__content">
+							<div class="homeWorkBox__title">
+								<span>CAMPER</span>
+								<h4>軽キャンピングカー</h4>
+							<!-- /.homeWorkBox__title --></div>
+							<h5 class="homeWorkBox__lead">ソロで、恋人と、家族と<br>さあ、新しい旅にでかけよう！</h5>
+							<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							<div class="button--type01"><a href="<?php echo home_url(); ?>/camper"><img src="img/common/more.svg" alt="MORE" /></a></div>
+						<!-- /.homeWorkBox__content --></div>
+						<div class="homeWorkBox__imageBox">
+							<p class="homeWorkBox__imageCopy"><img src="img/home/letsactivity.svg" alt="LET'S ACTIVITY" /></p>
+							<figure class="homeWorkBox__image"><img src="img/home/imgWorkMain02.jpg" alt="軽キャンピングカー" /></figure>
+							<ul class="homeWorkBox__subImage">
+								<li><img src="img/home/imgWorkSub03.jpg" alt="軽キャンピングカー" /></li>
+								<li><img src="img/home/imgWorkSub04.jpg" alt="軽キャンピングカー" /></li>
+							</ul>
+						<!-- /.homeWorkBox__imageBox --></div>
+					<!-- /.homeWorkBox__inner --></div>
+					
+					<div class="homeWorkBox__inner">
+						<div class="homeWorkBox__content">
+							<div class="homeWorkBox__title">
+								<span>NURTURE</span>
+								<h4>食 育</h4>
+							<!-- /.homeWorkBox__title --></div>
+							<h5 class="homeWorkBox__lead">生きる力を育む<br>学ぶ、触れる、味わう</h5>
+							<p>地域の飲食店や無農薬野菜の栽培・販売を行う<br>農家の方々と協力し、食や健康に関する体験を通して、人との関わりを学び、健全な心を育てます。</p>
+							<div class="button--type01"><a href="<?php echo home_url(); ?>/nurture"><img src="img/common/more.svg" alt="MORE" /></a></div>
+						<!-- /.homeWorkBox__content --></div>
+						<div class="homeWorkBox__imageBox">
+							<p class="homeWorkBox__imageCopy"><img src="img/home/richgrowth.svg" alt="RICH GROWTH" /></p>
+							<figure class="homeWorkBox__image"><img src="img/home/imgWorkMain03.jpg" alt="食 育" /></figure>
+							<ul class="homeWorkBox__subImage">
+								<li><img src="img/home/imgWorkSub05.jpg" alt="食 育" /></li>
+								<li><img src="img/home/imgWorkSub06.jpg" alt="食 育" /></li>
+							</ul>
+						<!-- /.homeWorkBox__imageBox --></div>
+					<!-- /.homeWorkBox__inner --></div>
+
+				<!-- /.homeWorkBox --></div>
+			<!-- /.inBase__inner --></div>
+			<!-- /.inBase --></div>
+		<!-- /.homeWorkSection --></div>
+
+		<div class="homeEventSection">
+			<div class="inBase clearfix">
+				<div class="homeEventBox">
+					<div class="title--type01 --typeEvent tC"><h3><img src="img/home/event.svg" alt="EVENT" /></h3><span>イベント活動</span></div>
+					<figure class="homeEventBox__image01"><img src="img/home/imgEvent02.png" alt="イベント活動" /></figure>
+					<p class="homeEventBox__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+					<figure class="homeEventBox__image02"><img src="img/home/imgEvent01.png" alt="イベント活動" /></figure>
+					<div class="homeEventBox__inner">
+
+
+
+
+<!-- スライダーここから -->
+<div class="sliderBox--typeChangeSlide">
+<!-- Slider全体のコンテナ -->
+<div class="swiper">
+    <!-- Sliderの内包コンテナ -->
+    <div class="swiper-wrapper">
+        <!-- Slideさせたいコンテンツ -->
+	<div class="swiper-slide">
+						    	<div class="homeEventBox__article"><a href="#">
+									<figure>
+										<!-- 縦横比率調整表示ここから -->
+										<div class="adjustBox adjustBox--typeGR">
+										    <div class="adjustBox__inner">
+										        <img src="img/home/imgEventSample01.jpg" alt="イベント活動">
+										    <!-- /.adjustBox__inner --></div>
+										<!-- /.adjustBox --></div>
+										<!-- 縦横比率調整表示ここまで -->
+									</figure>
+									<div class="homeEventBox__content">
+										<p>タイトルタイトルタイトルがここに入ります</p>
+										<p>2024. 02. 01</p>
+									<!-- /.homeEventBox__content --></div>
+								</a><!-- /.homeEventBox__article --></div>
+	<!-- /.swiper-slide --></div>
+	<div class="swiper-slide">
+						    	<div class="homeEventBox__article"><a href="#">
+									<figure>
+										<!-- 縦横比率調整表示ここから -->
+										<div class="adjustBox adjustBox--typeGR">
+										    <div class="adjustBox__inner">
+										        <img src="img/home/imgEventSample02.jpg" alt="イベント活動">
+										    <!-- /.adjustBox__inner --></div>
+										<!-- /.adjustBox --></div>
+										<!-- 縦横比率調整表示ここまで -->
+									</figure>
+									<div class="homeEventBox__content">
+										<p>タイトルがここに入ります</p>
+										<p>2024. 02. 01</p>
+									<!-- /.homeEventBox__content --></div>
+								</a><!-- /.homeEventBox__article --></div>
+	<!-- /.swiper-slide --></div>
+	<div class="swiper-slide">
+						    	<div class="homeEventBox__article"><a href="#">
+									<figure>
+										<!-- 縦横比率調整表示ここから -->
+										<div class="adjustBox adjustBox--typeGR">
+										    <div class="adjustBox__inner">
+										        <img src="img/home/imgEventSample03.jpg" alt="イベント活動">
+										    <!-- /.adjustBox__inner --></div>
+										<!-- /.adjustBox --></div>
+										<!-- 縦横比率調整表示ここまで -->
+									</figure>
+									<div class="homeEventBox__content">
+										<p>タイトルタイトルタイトルがここに入ります</p>
+										<p>2024. 02. 01</p>
+									<!-- /.homeEventBox__content --></div>
+								</a><!-- /.homeEventBox__article --></div>
+	<!-- /.swiper-slide --></div>
+    <!-- /.swiper-wrapper --></div>
+    <!-- ナビゲーションボタン（※省略可） -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+<!-- /.swiper --></div>
+<!-- Sliderここまで -->
+<!-- /.sliderBox--typeChangeSlide --></div>
+<!-- スライダーここまで -->
+
+
+
+
+
+					<!-- /.homeEventBox__inner --></div>
+					<figure class="homeEventBox__image03"><img src="img/home/imgEvent03.png" alt="イベント活動" /></figure>
+
+					<div class="button--type01 tC"><a href="<?php echo home_url(); ?>/activity"><img src="img/common/more2.svg" alt="MORE" /></a></div>
+				<!-- /.homeEventBox --></div>
+			<!-- /.inBase --></div>
+		<!-- /.homeEventSection --></div>
+
+		<div class="homeStoreSection">
+			<div class="inBase clearfix">
+				<div class="homeStoreBox">
+					<div class="title--type01 --typeStore tC"><h3><img src="img/home/store.svg" alt="STORE" /></h3><span>店舗情報</span></div>
+					<figure class="homeStoreBox__image01"><img src="img/home/imgEvent04.png" alt="イベント活動" /></figure>
+
+					<div class="homeStoreBox__inner01">
+						<div class="homeStoreBox__mapBox"><div class="googleMapBox">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.261338607865!2d135.3584324!3d34.799366400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f40ba2e0ea55%3A0x3218c4a985327882!2z44CSNjY1LTAwMzMg5YW15bqr55yM5a6d5aGa5biC5LyK5a2R5b-X77yS5LiB55uu77yR77yX4oiS77yR77yY!5e0!3m2!1sja!2sjp!4v1706429119874!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<!-- /.googleMapBox --></div><!-- /.homeStoreBox__mapBox --></div>
+						<div class="homeStoreBox__information">
+							<dl>
+								<dt>MEMIDA WORKS　宝塚市役所前店</dt>
+								<dd>住所：〒665-0033<br>
+									兵庫県宝塚市伊孑志2丁目17-18<br>
+									TEL：0797-20-7890<br>
+									定休日：月曜日（仮）<br>
+									営業時間：00：00~00：00</dd>
+							</dl>
+						<!-- /.homeStoreBox__information --></div>
+					<!-- /.homeStoreBox__inner01 --></div>
+
+					<div class="homeStoreBox__inner02">
+						<p class="homeStoreBox__contact"><a href="<?php echo home_url(); ?>/contact"><span><img src="img/home/contact.svg" alt="CONTACT" /></span><small>お問い合わせ</small></a></p>
+						<div class="homeStoreBox__reservation"><a href="<?php echo home_url(); ?>/contact">
+							新車・軽キャンピングカー<br class="hidden-pc">商談予約はこちらから
+						</a><!-- /.homeStoreBox__reservation --></div>
+					<!-- /.homeStoreBox__inner02 --></div>
+
+					<div class="homeStoreBox__inner03">
+						<div class="homeStoreBox__company">
+							<figure><img src="img/home/imgCompany.jpg" alt="株式会社MEMIDA" /></figure>
+							<dl>
+								<dt>株式会社MEMIDA</dt>
+								<dd>住所：000-0000<br>
+									テキストテキストテキストテキストテキストテキスト<br>
+									TEL：00-0000-0000<br>
+									定休日：月曜日（仮）<br>
+									営業時間：00：00?00：00</dd>
+							</dl>
+						<!-- /.homeStoreBox__company --></div>
+						<div class="homeStoreBox__storeList">
+							<div class="homeStoreBox__store"><a href="#">
+								<dl>
+									<dt>MEMIDA WORKS</dt>
+									<dd>北神三田店</dd>
+								</dl>
+								<figure><img src="img/home/imgStore01.jpg" alt="北神三田店" /></figure>
+							</a><!-- /.homeStoreBox__store --></div>
+							<div class="homeStoreBox__store"><a href="https://himawari-ss.com/">
+								<dl>
+									<dt>MEMIDA WORKS</dt>
+									<dd>宝塚本店</dd>
+								</dl>
+								<figure><img src="img/home/imgStore02.jpg" alt="宝塚本店" /></figure>
+							</a><!-- /.homeStoreBox__store --></div>
+							<div class="homeStoreBox__store"><a href="https://memida-works.jp/">
+								<dl>
+									<dt>MEMIDA WORKS</dt>
+									<dd>人材育成<br class="hidden-pc">セミナー</dd>
+								</dl>
+								<figure><img src="img/home/imgStore03.jpg" alt="人材育成セミナー" /></figure>
+							</a><!-- /.homeStoreBox__store --></div>
+							<!--<div class="homeStoreBox__store"><a href="https://www.ksdj.or.jp/">
+								<dl>
+									<dt>MEMIDA WORKS</dt>
+									<dd>関西示道塾</dd>
+								</dl>
+								<figure><img src="img/home/imgStore04.jpg" alt="関西示道塾" /></figure>
+							</a><!-- /.homeStoreBox__store --</div>-->
+						<!-- /.homeStoreBox__company --></div>
+					<!-- /.homeStoreBox__inner03 --></div>
+
+
+
+
+
+
+
+
+				<div class="homeStoreBox__headBox">
+					<figure class="homeStoreBox__headImage"><img src="img/home/imgStoreVisual01.jpg" alt="MEMIDA WORKS　宝塚市役所前店" /></figure>
+					<div class="homeStoreBox__headContent">
+						<div class="homeStoreBox__mapBox">
+							<div class="googleMapBox">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.261338607865!2d135.3584324!3d34.799366400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f40ba2e0ea55%3A0x3218c4a985327882!2z44CSNjY1LTAwMzMg5YW15bqr55yM5a6d5aGa5biC5LyK5a2R5b-X77yS5LiB55uu77yR77yX4oiS77yR77yY!5e0!3m2!1sja!2sjp!4v1706429119874!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<!-- /.googleMapBox --></div>
+						<!-- /.homeStoreBox__mapBox --></div>
+						<div class="homeStoreBox__headInformation">
+							<p>MEMIDA WORKS　宝塚市役所前店</p>
+							<p>住所：000-0000<br>
+								テキストテキストテキストテキストテキストテキスト<br>
+								TEL：00-0000-0000<br>
+								定休日：月曜日（仮）<br>
+								営業時間：00：00$301C00：00</p>
+						<!-- /.homeStoreBox__headInformation --></div>
+					<!-- /.homeStoreBox__headContent --></div>
+					<div class="homeStoreBox__insideBox">
+						<div class="homeStoreBox__inside">
+							<iframe width='853' height='480' src='https://my.matterport.com/show/?m=4SKiWguD3sg' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
+						<!-- /.homeStoreBox__inside --></div>
+					<!-- /.homeStoreBox__insideBox --></div>
+				<!-- /.homeStoreBox__headBox --></div>
+
+
+
+				<div class="homeStoreBox__reservationButton"><a href="<?php echo home_url(); ?>/contact">
+					<p class="homeStoreBox__reservationButtonTitle"><span><img src="img/home/contact.svg" alt="CONTACT" /></span><small>お問い合わせ</small></p>
+					<div class="homeStoreBox__reservationButtonSent">
+						<span>新車・軽キャンピングカー<br class="hidden-pc">商談予約はこちらから</span>
+					<!-- /.homeStoreBox__reservation --></div>
+				</a><!-- /.homeStoreBox__reservationButton --></div>
+
+				<div class="homeStoreBox__inner">
+					<div class="homeStoreBox__companyBox">
+						<figure><img src="img/home/imgStoreVisual02.jpg" alt="有限会社目見田商事" /></figure>
+						<dl>
+							<dt>有限会社目見田商事</dt>
+							<dd>住所：000-0000　テキストテキストテキストテキストテキスト<br>
+								TEL：00-0000-0000<br>
+								定休日：月曜日（仮）/  営業時間：00：00$301C00：00</dd>
+						</dl>
+					<!-- /.homeStoreBox__companyBox --></div>
+					<div class="homeStoreBox__storeListBox">
+						<div class="homeStoreBox__storeVisual">
+							<a href="https://himawari-ss.com">
+								<p><span>MEMIDA WORKS</span><span>宝塚本店</span></p>
+								<figure><img src="img/home/imgStoreVisual03.jpg" alt="有限会社目見田商事 宝塚本店" /></figure>
+							</a>
+						<!-- /.homeStoreBox__store --></div>
+						<div class="homeStoreBox__storeVisual">
+							<a href="#">
+								<p><span>MEMIDA WORKS</span><span>北神三田店</span></p>
+								<figure><img src="img/home/imgStoreVisual04.jpg" alt="有限会社目見田商事 北神三田店" /></figure>
+							</a>
+						<!-- /.homeStoreBox__store --></div>
+					<!-- /.homeStoreBox__StoreListBox --></div>
+				<!-- /.homeStoreBox__inner --></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- /.homeStoreBox --></div>
+			<!-- /.inBase --></div>
+		<!-- /.homeStoreSection --></div>
+        
+	<!-- /#contents --></div>
+	
+	<footer id="footer" class="--type01">
+		<div class="inBase clearfix">
+			<div class="footer__inner">
+				<div class="inBase__inner clearfix">
+					<div class="footer__siteTitle"><img src="img/common/siteTitle.svg" alt="MEMIDA" /></div>
+					<ul class="footer__navi">
+						<li><a href="<?php echo home_url(); ?>/concept">私たちについて</a></li>
+						<li><a href="<?php echo home_url(); ?>/car">新車販売</a></li>
+						<li><a href="<?php echo home_url(); ?>/camper">軽キャンピングカー</a></li>
+				        	<li><a href="<?php echo home_url(); ?>/nurture">食育</a></li>
+				        	<li><a href="<?php echo home_url(); ?>/store">店舗情報</a></li>
+					</ul>
+
+					<div class="footer__navi02">
+						<a href="<?php echo home_url(); ?>/company">会社概要</a>
+						<a href="<?php echo home_url(); ?>/privacypolicy">プライバシーポリシー</a>
+					<!-- /.footer__navi02 --></div>
+					<div class="footer__sns">
+						<a href="https://www.instagram.com/memida_works_newcar?igsh=aW9xeWx5bnl2d2V4"><i class="fa fa-fw icon-instagram"></i></a>
+					<!-- /.footer__SNS --></div>
+					<figure class="footer__image"><img src="img/common/imgFooer.png" alt="地域がつながる場作り" /></figure>
+				<!-- /.inBase__inner --></div>
+			<!-- /.footer__inner --></div>
+		<!-- /.inBase --></div>
+	<!-- /#footer --></footer>
+	
+	<footer id="footer" class="--type02">
+		<div class="inBase clearfix">
+			<div class="footer__inner">
+				<div class="inBase__inner clearfix">
+					<div class="footer__siteTitle"><img src="img/common/siteTitle_w.svg" alt="MEMIDA WORKS" /></div>
+
+					<div class="footer__naviBox">
+						<ul class="footer__navi">
+							<li><a href="<?php echo home_url(); ?>/concept">私たちについて</a></li>
+							<li><a href="<?php echo home_url(); ?>/car">新車販売</a></li>
+							<li><a href="<?php echo home_url(); ?>/camper">軽キャンピングカー</a></li>
+					        	<li><a href="<?php echo home_url(); ?>/nurture">食育</a></li>
+					        	<li><a href="<?php echo home_url(); ?>/store">店舗情報</a></li>
+						</ul>
+
+						<div class="footer__navi02">
+							<a href="<?php echo home_url(); ?>/store">店舗案内</a>
+							<a href="<?php echo home_url(); ?>/privacypolicy">プライバシーポリシー</a>
+							<a href="#">企業向け</a>
+						<!-- /.footer__navi02 --></div>
+					<!-- /.footer__naviBox --></div>
+				<!-- /.inBase__inner --></div>
+			<!-- /.footer__inner --></div>
+			<figure class="footer__image"><img src="img/common/imgFooer.png" alt="地域がつながる場作り" /></figure>
+			<div class="labelReassemblage">事業再構築</div>
+		<!-- /.inBase --></div>
+	<!-- /#footer --></footer>
+
+	<small class="copyright">Copyright &copy; MEMIDAWORKS. All Rights Reserved.</small>
+        
+	<div id="btnRise"><a href="#wrapper"><figure><img src="img/common/buttonRise.svg" alt="ページ上部に戻る" /></figure><span>ページ上部に戻る</span></a></div>
+	  
+	<div id="btnTelEmpty"></div>
+    
+    <div id="btnPageBottom">
+        <div class="btnPageBottom--btn btnPageBottom--type01">
+            <a class="clearfix is-notMovePage" href="<?php echo home_url(); ?>/contact">
+                <i class="icon-envelope-square"></i>
+                <p class="btnPageBottom--type01__sent01">新車・軽キャンピングカー<br>商談予約はこちら</p>
+            </a>
+        <!-- /.btnPageBottom--btn --></div>
+    <!-- /#btnPageBottom --></div>
+
+    <div class="sideBannerBox">
+    	<div class="sideBannerBox__banner"><a href="<?php echo home_url(); ?>/contact">
+    		<p class="sideBannerBox__content">お車の商談予約はこちら<span><img src="img/common/imgArrow01.svg" alt="予約へ" /></span></p>
+    	</a><!-- /.sideBanner --></div>
+    <!-- /.sideBannerBox --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>

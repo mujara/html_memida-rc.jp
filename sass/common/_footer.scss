@@ -1,0 +1,311 @@
+@use "../_setting" as s;
+
+#footer.--type01 {
+	background:s.$colorType03;
+	padding:3em 0 0 0;
+	clear: both;
+	margin-top:3em;
+	@include s.media(m){
+		margin-top:6em;
+	}
+}
+
+#footer.--type01 .footer__inner{
+	background:#FFF;
+	border-radius: 3em 3em 0 0;
+	padding:4em 3em 1em;
+	display:block;
+	@include s.media(m){
+		padding:0;
+	}
+	.inBase__inner{
+		position:relative;
+		@include s.media(m){
+			padding:2em 0 1em;
+			display:flex;
+			align-items:flex-end;
+		}
+	}
+}
+
+#footer.--type01 .footer__siteTitle{
+	display:block;
+	width:30%;
+	margin:0 auto 2em;
+	@include s.media(m){
+		width:10%;
+		height:10em;
+		margin:0;
+	}
+	img{
+		margin-top:-0.5em;
+		width:100%;
+	}
+}
+
+#footer.--type01 .footer__image{
+	@include s.media(m){
+		display:block;
+		width:s.em(440);
+		position:absolute;
+		top:-8em;
+		right:-1em;
+	}
+	img{
+		width:100%;
+	}
+}
+
+#wrapper #footer.--type01 .footer__navi {
+	width:100%;
+	border-bottom:#999999 dotted 1px;
+	margin-bottom:2em;
+	display:block;
+		@include s.media(m){
+			width:23%;
+			border-right:#000 solid 1px;
+			border-bottom:none;
+			padding:0 0 0 3em;
+			margin-bottom:0;
+		}
+	li{
+		padding:5px 0;
+		border-top:#999999 dotted 1px;
+		@include s.media(m){
+			padding:0 0 5px;
+			border:none;
+		}
+		a{
+			color:#000;
+			text-decoration:none;
+			font-family: 'Zen Kaku Gothic New', sans-serif;
+			font-weight:700;
+			&::before {
+				content:"\f111";
+                    		font-family: 'icomoon';
+				color:s.$colorType02;
+				font-size:0.6em;
+				margin-right:1em;
+			}
+			&:hover {
+				color: s.$colorType02;
+			}
+		}
+	}
+}
+
+
+
+#wrapper #footer.--type01 .footer__navi02{
+	display:block;
+	margin-bottom:2em;
+	text-align:center;
+	@include s.media(m){
+		width:67%;
+		padding-left:3em;
+		margin-bottom:0;
+		text-align:left;
+	}
+	a{
+		color:#000;
+		text-decoration:none;
+		font-family: 'Zen Kaku Gothic New', sans-serif;
+		font-weight:700;
+		&:hover {
+			color: s.$colorType02;
+		}
+		+a{
+			&::before {
+	                    	content: "/";
+				display:inline-block;
+				margin:0 0.5em;
+			}
+			&:hover::before {
+				color:#000;
+			}
+		}
+	}
+}
+
+#wrapper #footer.--type01 .footer__sns{
+	position:absolute;
+	bottom:0;
+	right:-1em;
+	font-size:1.5em;
+	z-index:1;
+	@include s.media(m){
+		position:absolute;
+		bottom:6em;
+		right:58%;
+	}
+	a{
+		display:block;
+		width:1.5em;
+		height:1.5em;
+		border-radius:50%;
+		background:s.$colorType02;
+		color:#FFF;
+		text-align:center;
+		line-height:1.7;
+		&:hover{
+			background:#000;
+		}
+	}
+}
+
+
+
+//後にフッター修正　--type02追加　これまでのフッターは--type01　2024/04/09
+
+#footer.--type02 {
+	background:#4B4B4B;
+	clear: both;
+	.inBase{
+		position:relative;
+	}
+}
+
+#footer.--type02 .footer__image{
+	display:block;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	@include s.media(m){
+		width:s.em(250);
+		position:absolute;
+		top:-2em;
+		right:0;
+	}
+	img{
+		width:100%;
+	}
+}
+
+#footer.--type02 .labelReassemblage{
+	display:inline-block;
+	width:7em;
+	background:#FFF;
+	border:#000 solid 1px;
+	position:absolute;
+	right:0;
+	bottom:0;
+	padding:0.2em 0.5em;
+	text-align:center;
+	font-size:1.1em;
+	@include s.media(m){
+		right:0;
+		bottom:-0.5em;
+	}
+}
+
+.page-id-22 #footer.--type02 .labelReassemblage{
+	display:inline-block;
+}
+
+#footer.--type02 .footer__inner{
+	padding:4em 1em 1em;
+	display:block;
+	@include s.media(m){
+		padding:0;
+	}
+	.inBase__inner{
+		position:relative;
+		@include s.media(m){
+			padding:2em 0 2em;
+			display:flex;
+			align-items:flex-end;
+		}
+	}
+}
+
+#footer.--type02 .footer__siteTitle{
+	display:block;
+	width:40%;
+	margin:0 auto 2em;
+	@include s.media(m){
+		width:14%;
+		margin:0;
+		padding-right:3em;
+	}
+	img{
+		margin-top:-0.5em;
+		width:100%;
+	}
+}
+
+#wrapper #footer.--type02 .footer__naviBox {
+	display:block;
+	@include s.media(m){
+		width:83%;
+		padding-left:3em;
+		border-left:#FFF solid 1px;
+	}
+}
+
+#wrapper #footer.--type02 .footer__navi {
+	width:100%;
+	border-bottom:#999999 dotted 1px;
+	margin-bottom:2em;
+	display:block;
+		@include s.media(m){
+			width:100%;
+			display:flex;
+			border-bottom:none;
+			margin-bottom:0;
+		}
+	li{
+		padding:5px 0;
+		border-top:#999999 dotted 1px;
+		@include s.media(m){
+			padding:0 0 5px;
+			border:none;
+			margin-right:1em;
+		}
+		a{
+			color:#FFF;
+			text-decoration:none;
+			font-family: 'Zen Kaku Gothic New', sans-serif;
+			font-weight:500;
+			&::before {
+				content:"\f111";
+                    		font-family: 'icomoon';
+				color:s.$colorType02;
+				font-size:0.6em;
+				margin-right:1em;
+			}
+			&:hover {
+				color: s.$colorType02;
+			}
+		}
+	}
+}
+
+#wrapper #footer.--type02 .footer__navi02{
+	display:block;
+	margin-bottom:2em;
+	text-align:center;
+	@include s.media(m){
+		width:67%;
+		margin-bottom:0;
+		text-align:left;
+	}
+	a{
+		color:#FFF;
+		text-decoration:none;
+		font-family: 'Zen Kaku Gothic New', sans-serif;
+		font-weight:500;
+		&:hover {
+			color: s.$colorType02;
+		}
+		+a{
+			&::before {
+	                    	content: "/";
+				display:inline-block;
+				margin:0 0.5em;
+			}
+			&:hover::before {
+				color:#000;
+			}
+		}
+	}
+}
